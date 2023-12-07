@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Contato</title>
+</head>
+<body>
+    <!--BARRA DE NAVEGAÇÃO-->    
+    <header>
+      <nav>
+        <a class="logo" href="../index.html"><img src="../imagens/logo.png" alt=""></a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="./acomodacao.html">Acomodações</a></li>
+          <li><a href="./Reserva.html">Reservas</a></li>
+          <li><a href="./suporte.html">Suporte</a></li>
+          <li><a href="./perfil.html"><img src="../imagens/perfil.png" alt="" class="perfil"></a></li>         
+        </ul>
+      </nav>
+    </header>
+    <!-- PARTE DE CONTATO -->
+    <body class="bodycontato">
+    <div class="containercontato">
+        <div class="box1">
+            <h1 class="titlecontato">Contate-Nos</h1>
+            <p class="text">Por favor, preencha os formulários corretamente.</p>
+
+        </div>
+        <div class="box2">
+            <form class="box3" action="mailto:" method="post" enctype="text/plain">                
+                <label for="name">Nome Completo:</label>
+                <input class="input-field" type="text" id="name" placeholder="Digite seu nome">
+                <label for="email">E-mail:</label>
+                <input class="input-field" type="email" id="email" placeholder="Digite Seu Email">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="message" cols="49" rows="10" placeholder="Digite sua mensagem"></textarea>
+                <button class="buttoncontato" type="submit" onclick="validarFormulario()">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Sobre Nós</h2>
+            <p>Conheça mais sobre a Pousada Quinta do Ypuã e nossos serviços.</p>
+          </div>
+          <div class="footer-section contact">
+            <h2>Contato</h2>
+            <p>Email: info@quintadoypua.com</p>
+            <p>Telefone: (123) 456-7890</p>
+          </div>
+          <div class="footer-section social">
+            <h2>Redes Sociais</h2>
+            <ul class="nav-list">
+              <div class="instwhat">
+              <li><a href="https://instagram.com/@andre.moura "><img src="../imagens/instagram-logo-2D3332C00B-seeklogo.com.png" alt="" id="instagram"></a></li>
+              <li><a href="https://api.whatsapp.com/send?phone=5582988168789"></href> <img src="../imagens/whatsapp-icon-transparent-png-6.png" alt="" id="instagram"></a></li>
+            </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="direitos">&copy; 2023 Pousada Quinta do Ypuã. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="../app.js"></script>
+</body>
+</html>

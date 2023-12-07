@@ -1,0 +1,771 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*Nav bar responsiva */
+
+  a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-right: 150px;
+
+  }
+  /*---------------------nav bar com as abas----------------------*/
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    height: 20vh;
+    margin-bottom: 50px;
+    font-size: 23px;
+  }
+  /*---------------------------------------------*/
+
+  
+  .nav-list {
+
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {  
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  /*--------------------------------------------------------------------------*/
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: black;
+    border-style:9px dotted;
+    border: #27ae60;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width:999px) {
+    body {
+      overflow-x: visible;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0100;
+      opacity: 100;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  /*Nav bar responsiva */
+
+
+
+  #topo{
+    display: flex;
+    align-items: center;
+    flex-direction: initial;
+    justify-content: center;
+    margin-top: 30px; 
+   /*--------------------pagina de inicio----------------*/ 
+  }
+  #inicio{
+    border-radius: 7px;
+    font-size: 17px;
+    text-transform: uppercase;
+
+    width: 2000px;
+    height: 250px;
+    /* MUDAR A COR */
+    background-color:#D9B471;
+    color: #fff;
+    text-align:center;
+    padding-top: 60px;  
+  }
+  .corpo-personalizado {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:100px;
+}
+
+.container-personalizada {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 5px auto 100px; /* Adicionado para centralizar */
+}
+
+.container-personalizada h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.container-personalizada p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.botoes-container-personalizados,#cadastro-btn, #login-btn{
+    display: flex;
+    justify-content: center;
+    margin-right: 34px;
+}
+
+.botao-personalizado {
+    padding: 15px 30px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-personalizado#cadastro-btn {
+    background-color: #3498db;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.botao-personalizado#login-btn {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.botao-personalizado:hover {
+    opacity: 0.8;
+}
+
+ /*----------------------PAGINA DE RESERVA----------------------*/
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    max-height: 1800px;
+    min-height: 380PX;
+    margin: 5px auto 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    margin-top: 20px;
+    background-color: #732424;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 25px;
+}
+/*---------------------------------------------------------*/
+/*--------------------PAGINA DE LOGIN------------------*/
+.login-form,.reservation-form,.reservation-list,.guest-list {
+    padding: 20px;
+}
+.login-form {/*section de login*/
+
+    font-size: 23px;
+    max-width: 370px;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 23px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+/*botão de enviar*/
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+    
+}
+/*------------------------------------------------------------*/
+.price-section {
+    margin-top: 20px;
+}
+button {/*Boa parte dos botões de toda a aplicação estão com a mesma configuração*/
+    background-color: #D9B471;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+    margin-left: 75px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+.reservation-list,
+.guest-list {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.guest-list div {
+    margin-bottom: 10px;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+/* estilizar a seção de preços */
+.price-section {
+    margin-top: 20px;
+}
+
+/*seção de custo total */
+#totalCost {
+    margin-top: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+
+/*janela de reserva*/
+
+#reservationForm{
+  
+  margin-left: 200px;
+  margin-right: 200px;
+  
+}
+
+#guestList{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+
+.button-reserva{
+    margin-top: 5px;
+    margin-left: 160px;
+    display: flex;
+}
+.custot{/*Boa parte dos botões de toda a aplicação estão com a mesma configuração*/
+  background-color: #D9B471;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+  margin: 20px;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+.btreserva{/*Boa parte dos botões de toda a aplicação estão com a mesma configuração*/
+  background-color: #D9B471;
+  color: #fff;
+  width: 200px;
+  margin: 20px;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+.reservas-lista{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin:5px 200px 100px;
+}
+/*--------------------------PERFIL---------------------*/
+.perfil{
+  height: 40px;
+  width: 40px;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:#f5f5f5;
+}
+
+.profile-container {
+  background-color: #8a6d3b;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color:white;
+  transition: transform 0.3s ease-in-out;
+  text-align: left; /* Alinhamento à esquerda */
+}
+/*passar o mouse sob o container e ele aumentar o tamanho*/
+.profile-container:hover {
+  transform: scale(1.02);
+}
+
+.profile-header {
+  text-align: left;
+}
+
+.avatar {
+  background-color: #f5f5f5;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.h1perfil {
+  color: #000000;
+  font-size: 24px;
+}
+
+.profile-info {
+  background-color: white;
+  border:2px black ridge;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+.info-section h2 {
+  color: #732424;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.profile-info strong {
+  font-weight: bold;
+}
+#username,#password{
+  font-size: 20px;
+}
+.title_suporte{
+  font-size: 100px;
+  padding-left: 50px;
+}
+.container_Suporte{
+  max-width: 700px;
+  max-height: 1800px;
+  min-height: 380PX;
+  margin: 5px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+/*-------------------------------------------------------------*/
+
+
+/*------------------PARTE DE CONTATO-----------------------------*/
+:root{
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --gray: rgb(127.5, 127.5, 127.5);
+  --lightgray: #D3D3D3;
+  --pastel: #D5BA98;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.bodycontato{
+  background-color: #f5f5f5;
+}
+
+.containercontato{
+  max-width: 700px;
+  max-height: 1800px;
+  min-height: 380PX;
+  margin: 5px auto 100px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.box1{
+  background-color:#732424;
+  color: #fff;   
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+}
+
+.box2{
+  font-size: 23px;
+  max-width: 550px;
+  max-height: 800px;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 23px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.box1 .text{
+  margin-top: 0.25rem;
+}
+
+.box3{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.titlecontato{
+  font-size: 25px;
+}
+.buttoncontato{
+  background-color: #D9B471;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+    margin-left: 170px;
+    font-size: 20px;
+
+}
+#message{
+  font-size: 20px;
+}
+/*-------------------------------------------------------------------*/
+
+/*------------------------página de acomodação-----------------------*/
+/* Aplicar uma fonte básica e cor de fundo à página inteira */
+
+/* Adicionar alguns estilos ao menu móvel */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line1,.line2,.line3 {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Estilizar a área de conteúdo principal */
+.main-accommotadion{
+    padding: 5px;
+}
+
+.hr_acomodacao {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.suite {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.suite-01 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .line1.rotate-down,
+    .line2.fade-out,
+    .line3.rotate-up {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+}
+
+/*-------------------------------------------------------------------*/
+
+
+/*--------------------------Suporte 24H------------------------------*/
+:root{
+  --backgroundGray: #F5F5F5;
+  --white: #FFFFFF;
+  --black: #000000;
+  --beige: #D9B471;
+  --red1: #c82333;  
+  --red2: #dc3545;
+  --red3: rgb(167, 10, 10);
+  --wine: #732424;
+  --brown: #8a6d3b; 
+}
+
+.suport-container{
+    background-color: var(--white);
+    width: 90%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto auto 100px;
+}
+
+.suport-title{
+    font-size: 30px;
+    margin: 2.5% 5%;
+}
+
+.suport-subtitle{
+    color: var(--red3);
+}
+
+.suport-box1{
+    padding: 2% 4%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.suport-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    height: 20vh;
+    margin-bottom: 0px;
+    font-size: 23px;
+}
+
+.suport-button{
+    width: 92%;
+    height: 100px;
+    font-size: 40px;
+    margin-left: 4%;
+}
+
+/*--------------------------SITE FOOTER-------------------------------*/
+.site-footer {
+  background-color: #ffffff;
+  padding-top: 20px; /* Ajuste conforme necessário */
+  position: relative;
+  border-style: solid;
+  border-color: #732424;
+  text-align: center;
+  align-items: center;
+  border-width: 2px 0px;
+  width: 100%;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centraliza os elementos */
+
+}
+.footer-sectionAbout {
+width: 277.141px;
+height: 74px;
+}
+
+.footer-sectionContact {
+  width: 277.141px;
+  height: 74px;
+}
+
+.footer-sectionSocial {
+  width: 277.141px;
+  height: 74px;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h2 {
+  color: black;
+}
+
+.footer-section p {
+  color: gray;
+}
+
+.footer-bottom,.instagram {
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #7c0202;
+
+
+}
+#instagram{
+  width: 30px;
+  height: 30px;
+  list-style: none;
+
+}
+.direitos{
+  color: rgb(255, 255, 255);
+}
+.instwhat{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+}
